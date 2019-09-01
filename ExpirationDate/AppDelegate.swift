@@ -20,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = UINavigationController(rootViewController: JMYLocationListViewController())
         self.window?.makeKeyAndVisible()
         
-        _ = DataBaseManager.shared
+//        DataBaseManager.shared.createLocation(name: "Test1")
+//        DataBaseManager.shared.createLocation(name: "냉장고1")
+//        DataBaseManager.shared.readLocationList()
         
         return true
     }
