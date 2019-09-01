@@ -22,6 +22,7 @@
 		E14B9BA7231500A200C3B15E /* JMYLocationPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14B9BA5231500A200C3B15E /* JMYLocationPopupViewController.xib */; };
 		E14B9BAA23153A2600C3B15E /* JMYLocationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B9BA823153A2600C3B15E /* JMYLocationListCell.swift */; };
 		E14B9BAB23153A2600C3B15E /* JMYLocationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14B9BA923153A2600C3B15E /* JMYLocationListCell.xib */; };
+		E17B0DC6231BB66F0025B2C4 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B0DC5231BB66F0025B2C4 /* DataBaseManager.swift */; };
 		E1D6C6D222F32ED10041E856 /* JMYItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D6C6D022F32ED10041E856 /* JMYItemViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,7 @@
 		E116245722ACDFAD006A6AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E116245E22ACDFAE006A6AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E116246122ACDFAE006A6AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E116246322ACDFAE006A6AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E116246322ACDFAE006A6AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		E116246922ACE13F006A6AD8 /* JMYLocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYLocationListViewController.swift; sourceTree = "<group>"; };
 		E116246A22ACE13F006A6AD8 /* JMYLocationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationListViewController.xib; sourceTree = "<group>"; };
 		E116246D22ACE266006A6AD8 /* JMYInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYInventoryViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		E14B9BA5231500A200C3B15E /* JMYLocationPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationPopupViewController.xib; sourceTree = "<group>"; };
 		E14B9BA823153A2600C3B15E /* JMYLocationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYLocationListCell.swift; sourceTree = "<group>"; };
 		E14B9BA923153A2600C3B15E /* JMYLocationListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationListCell.xib; sourceTree = "<group>"; };
+		E17B0DC5231BB66F0025B2C4 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		E1D6C6D022F32ED10041E856 /* JMYItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYItemViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 		E14216A82316C8020032CF4B /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				E17B0DC5231BB66F0025B2C4 /* DataBaseManager.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E14B9BAA23153A2600C3B15E /* JMYLocationListCell.swift in Sources */,
+				E17B0DC6231BB66F0025B2C4 /* DataBaseManager.swift in Sources */,
 				E14B9BA22313A85600C3B15E /* JMYInventoryCell.swift in Sources */,
 				E14B9B9B2313A1E400C3B15E /* JMYItemViewController.swift in Sources */,
 				E14B9BA6231500A200C3B15E /* JMYLocationPopupViewController.swift in Sources */,
