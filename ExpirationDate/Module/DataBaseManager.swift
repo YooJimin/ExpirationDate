@@ -11,8 +11,8 @@ import SQLite3
 
 class DataBaseManager {
     
-    let dbURL: URL
-    var database: OpaquePointer?
+    private let dbURL: URL
+    private var database: OpaquePointer?
     
     static let shared = DataBaseManager()
     
@@ -39,17 +39,17 @@ class DataBaseManager {
         
     }
     
-    func openDataBase() throws {
+    private func openDataBase() throws {
         
         guard sqlite3_open(self.dbURL.path, &database) == SQLITE_OK else {
             
-            throw SQLiteError(message: "error! openDataBase")
+            throw DataBaseError(message: "error! openDataBase")
             
         }
         
     }
     
-    func createTables() throws {
+    private func createTables() throws {
         
         let locationSql = "CREATE TABLE IF NOT EXISTS Location (LocationId INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT, Name TEXT NOT NULL);"
         
@@ -58,7 +58,7 @@ class DataBaseManager {
         let sql = locationSql + itemSql
         
         if sqlite3_exec(self.database, sql, nil, nil, nil) != SQLITE_OK {
-            throw SQLiteError(message: "error! createTables Lotation")
+            throw DataBaseError(message: "error! createTables Lotation")
         }
         
     }
@@ -67,7 +67,7 @@ class DataBaseManager {
 
 extension DataBaseManager {
 
-    func createLocation(name: String) {
+    func createLocation(name: String) throws {
         
         var insertStatement: OpaquePointer? = nil
         defer {
@@ -82,21 +82,23 @@ extension DataBaseManager {
             
             // 2
             if sqlite3_bind_text(insertStatement, 1, (name as NSString).utf8String, -1, nil) != SQLITE_OK {
-                print("sqlite3_bind_text(insertEntryStmt)")
-                return
+                throw DataBaseError(message: "error! createLocation name")
             }
             
             // 3
             if sqlite3_step(insertStatement) != SQLITE_DONE {
-                print("Could not insert row.")
+                throw DataBaseError(message: "error! Could not insert row")
             }
+            
         } else {
-            print("INSERT statement could not be prepared.")
+            throw DataBaseError(message: "error! Could not insert row")
         }
+        
     }
     
-    func readLocationList() {
+    func readLocationList() -> [Location] {
         
+        var locations = [Location]()
         var readStatement: OpaquePointer? = nil
         defer {
             // 5
@@ -109,6 +111,7 @@ extension DataBaseManager {
         if sqlite3_prepare_v2(self.database, sql, -1, &readStatement, nil) == SQLITE_OK {
             // 2
             while sqlite3_step(readStatement) == SQLITE_ROW {
+                
                 // 3
                 let id = sqlite3_column_int(readStatement, 0)
                 
@@ -116,21 +119,25 @@ extension DataBaseManager {
                 let queryResultCol1 = sqlite3_column_text(readStatement, 1)
                 let name = String(cString: queryResultCol1!)
                 
-                // 5
-                print("Query Result:")
-                print("\(id) | \(name)")
+                locations.append(Location(id: Int(id), name: name))
                 
             }
         } else {
             print("SELECT statement could not be prepared")
         }
         
+        return locations
+        
+    }
+    
+    func updateLocation(_ location: Location) {
+        
     }
     
 }
 
 
-class SQLiteError: Error {
+class DataBaseError: Error {
     let message: String
     init(message: String) {
         self.message = message

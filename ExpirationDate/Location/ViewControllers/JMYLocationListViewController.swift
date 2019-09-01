@@ -10,13 +10,33 @@ import UIKit
 
 class JMYLocationListViewController: JMYViewController {
 
+    var locationList: [Location]? {
+        didSet {
+            
+            if let _ = self.locationList {
+                
+                self.collectionView.reloadData()
+                
+            }
+            
+        }
+    }
+    
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.setupNavigationBar()
         self.setupViews()
+        self.loadData()
 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+//        self.perform(#selector(test), with: nil, afterDelay: 1.0)
+        
     }
     
     func setupNavigationBar() {
@@ -33,14 +53,10 @@ class JMYLocationListViewController: JMYViewController {
         
     }
     
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    func loadData() {
         
-//        self.perform(#selector(test), with: nil, afterDelay: 1.0)
+        self.locationList = DataBaseManager.shared.readLocationList()
         
-
     }
 
     @objc func test() {
@@ -68,7 +84,11 @@ class JMYLocationListViewController: JMYViewController {
     @objc
     func touchUpInsideAddButton(_ sender: UIBarButtonItem) {
         
-        let viewController = JMYLocationPopupViewController()
+        let viewController = JMYLocationPopupViewController { [weak self] in
+            if let unwrappedSelf = self {
+                unwrappedSelf.loadData()
+            }
+        }
         viewController.modalPresentationStyle = .overFullScreen
         viewController.modalTransitionStyle = .crossDissolve
         self.present(viewController, animated: true, completion: nil)
@@ -78,12 +98,14 @@ class JMYLocationListViewController: JMYViewController {
 
 extension JMYLocationListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.locationList?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: JMYLocationListCell.self), for: indexPath)
+        let cell: JMYLocationListCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: JMYLocationListCell.self), for: indexPath) as! JMYLocationListCell
+        
+        cell.nameLabel.text = self.locationList?[indexPath.item].name
         
         return cell
         

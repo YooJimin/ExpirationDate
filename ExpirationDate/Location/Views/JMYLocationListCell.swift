@@ -11,7 +11,7 @@ import UIKit
 class JMYLocationListCell: UICollectionViewCell {
     
     @IBOutlet private weak var containerView: UIView!
-    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet public weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

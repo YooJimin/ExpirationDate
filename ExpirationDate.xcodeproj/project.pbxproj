@@ -23,6 +23,8 @@
 		E14B9BAA23153A2600C3B15E /* JMYLocationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B9BA823153A2600C3B15E /* JMYLocationListCell.swift */; };
 		E14B9BAB23153A2600C3B15E /* JMYLocationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14B9BA923153A2600C3B15E /* JMYLocationListCell.xib */; };
 		E17B0DC6231BB66F0025B2C4 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B0DC5231BB66F0025B2C4 /* DataBaseManager.swift */; };
+		E17B0DC8231BEDBE0025B2C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B0DC7231BEDBE0025B2C4 /* Location.swift */; };
+		E17B0DCB231BF54A0025B2C4 /* LocationColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B0DCA231BF54A0025B2C4 /* LocationColor.swift */; };
 		E1D6C6D222F32ED10041E856 /* JMYItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D6C6D022F32ED10041E856 /* JMYItemViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		E14B9BA823153A2600C3B15E /* JMYLocationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYLocationListCell.swift; sourceTree = "<group>"; };
 		E14B9BA923153A2600C3B15E /* JMYLocationListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationListCell.xib; sourceTree = "<group>"; };
 		E17B0DC5231BB66F0025B2C4 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		E17B0DC7231BEDBE0025B2C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E17B0DCA231BF54A0025B2C4 /* LocationColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationColor.swift; sourceTree = "<group>"; };
 		E1D6C6D022F32ED10041E856 /* JMYItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYItemViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,7 @@
 			children = (
 				E14216A223153DCA0032CF4B /* ViewControllers */,
 				E14216A323153DDD0032CF4B /* Views */,
+				E17B0DC9231BEDCC0025B2C4 /* Models */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -179,6 +184,15 @@
 				E14216A423153DF30032CF4B /* Views */,
 			);
 			path = Inventory;
+			sourceTree = "<group>";
+		};
+		E17B0DC9231BEDCC0025B2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E17B0DC7231BEDBE0025B2C4 /* Location.swift */,
+				E17B0DCA231BF54A0025B2C4 /* LocationColor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +276,12 @@
 				E17B0DC6231BB66F0025B2C4 /* DataBaseManager.swift in Sources */,
 				E14B9BA22313A85600C3B15E /* JMYInventoryCell.swift in Sources */,
 				E14B9B9B2313A1E400C3B15E /* JMYItemViewController.swift in Sources */,
+				E17B0DCB231BF54A0025B2C4 /* LocationColor.swift in Sources */,
 				E14B9BA6231500A200C3B15E /* JMYLocationPopupViewController.swift in Sources */,
 				E116246B22ACE13F006A6AD8 /* JMYLocationListViewController.swift in Sources */,
 				E116245822ACDFAD006A6AD8 /* AppDelegate.swift in Sources */,
 				E116246F22ACE266006A6AD8 /* JMYInventoryViewController.swift in Sources */,
+				E17B0DC8231BEDBE0025B2C4 /* Location.swift in Sources */,
 				E116247622ACE6D1006A6AD8 /* JMYViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
