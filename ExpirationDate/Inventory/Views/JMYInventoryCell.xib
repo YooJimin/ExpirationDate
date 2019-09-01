@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="JMYInventoryCell" customModule="ExpirationDate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDC-qd-Ysk">
+                        <rect key="frame" x="20" y="16" width="75" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Xo-4G-qqP">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Xo-4G-qqP" firstAttribute="top" secondItem="FDC-qd-Ysk" secondAttribute="top" id="58I-02-O6E"/>
+                            <constraint firstAttribute="bottom" secondItem="5Xo-4G-qqP" secondAttribute="bottom" id="TA4-zV-GvZ"/>
+                            <constraint firstAttribute="width" constant="75" id="W2q-hE-GnD"/>
+                            <constraint firstAttribute="trailing" secondItem="5Xo-4G-qqP" secondAttribute="trailing" id="dF8-ed-Pu5"/>
+                            <constraint firstItem="5Xo-4G-qqP" firstAttribute="leading" secondItem="FDC-qd-Ysk" secondAttribute="leading" id="ijq-UK-6B5"/>
+                            <constraint firstAttribute="height" constant="75" id="uIY-gP-dLh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계란" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgp-tv-92E">
+                        <rect key="frame" x="105" y="33" width="195" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019.10.31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNV-x0-v5o">
+                        <rect key="frame" x="105" y="57.5" width="195" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 자리는 메모 자리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmT-b9-wNU">
+                        <rect key="frame" x="20" y="107" width="280" height="11.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FDC-qd-Ysk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2AN-Jm-ZdS"/>
+                    <constraint firstItem="cgp-tv-92E" firstAttribute="leading" secondItem="FDC-qd-Ysk" secondAttribute="trailing" constant="10" id="2gj-nt-Tl8"/>
+                    <constraint firstItem="FNV-x0-v5o" firstAttribute="top" secondItem="cgp-tv-92E" secondAttribute="bottom" constant="3" id="53P-9V-EZ7"/>
+                    <constraint firstItem="cgp-tv-92E" firstAttribute="top" secondItem="FDC-qd-Ysk" secondAttribute="top" constant="17" id="774-kv-qWa"/>
+                    <constraint firstAttribute="bottom" secondItem="jmT-b9-wNU" secondAttribute="bottom" constant="16" id="8Lw-2A-EPw"/>
+                    <constraint firstItem="jmT-b9-wNU" firstAttribute="top" secondItem="FDC-qd-Ysk" secondAttribute="bottom" constant="16" id="SL2-Ck-p21"/>
+                    <constraint firstItem="jmT-b9-wNU" firstAttribute="leading" secondItem="5Xo-4G-qqP" secondAttribute="leading" id="gv8-0L-28U"/>
+                    <constraint firstItem="jmT-b9-wNU" firstAttribute="trailing" secondItem="cgp-tv-92E" secondAttribute="trailing" id="kBa-PU-zt4"/>
+                    <constraint firstItem="FNV-x0-v5o" firstAttribute="leading" secondItem="cgp-tv-92E" secondAttribute="leading" id="nNW-wc-8au"/>
+                    <constraint firstItem="FNV-x0-v5o" firstAttribute="trailing" secondItem="cgp-tv-92E" secondAttribute="trailing" id="p5T-zw-9J3"/>
+                    <constraint firstItem="FDC-qd-Ysk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="pju-MM-3LF"/>
+                    <constraint firstAttribute="trailing" secondItem="cgp-tv-92E" secondAttribute="trailing" constant="20" id="tEx-OP-5Mv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageContainerView" destination="FDC-qd-Ysk" id="x2J-7p-Pxf"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="81.361607142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

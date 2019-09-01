@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-//        self.window?.rootViewController = UINavigationController(rootViewController: JMYPositionViewController())
-        self.window?.rootViewController = UINavigationController(rootViewController: JMYStockViewController())
+        self.window?.rootViewController = UINavigationController(rootViewController: JMYLocationListViewController())
         self.window?.makeKeyAndVisible()
         
         return true

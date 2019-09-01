@@ -10,13 +10,19 @@
 		E116245822ACDFAD006A6AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116245722ACDFAD006A6AD8 /* AppDelegate.swift */; };
 		E116245F22ACDFAE006A6AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E116245E22ACDFAE006A6AD8 /* Assets.xcassets */; };
 		E116246222ACDFAE006A6AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E116246022ACDFAE006A6AD8 /* LaunchScreen.storyboard */; };
-		E116246B22ACE13F006A6AD8 /* JMYPositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116246922ACE13F006A6AD8 /* JMYPositionViewController.swift */; };
-		E116246C22ACE13F006A6AD8 /* JMYPositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E116246A22ACE13F006A6AD8 /* JMYPositionViewController.xib */; };
+		E116246B22ACE13F006A6AD8 /* JMYLocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116246922ACE13F006A6AD8 /* JMYLocationListViewController.swift */; };
+		E116246C22ACE13F006A6AD8 /* JMYLocationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E116246A22ACE13F006A6AD8 /* JMYLocationListViewController.xib */; };
 		E116246F22ACE266006A6AD8 /* JMYInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116246D22ACE266006A6AD8 /* JMYInventoryViewController.swift */; };
 		E116247022ACE266006A6AD8 /* JMYInventoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E116246E22ACE266006A6AD8 /* JMYInventoryViewController.xib */; };
 		E116247622ACE6D1006A6AD8 /* JMYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116247522ACE6D1006A6AD8 /* JMYViewController.swift */; };
-		E1D6C6D122F32ED10041E856 /* JMYStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6C6CF22F32ED10041E856 /* JMYStockViewController.swift */; };
-		E1D6C6D222F32ED10041E856 /* JMYStockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D6C6D022F32ED10041E856 /* JMYStockViewController.xib */; };
+		E14B9B9B2313A1E400C3B15E /* JMYItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B9B9A2313A1E400C3B15E /* JMYItemViewController.swift */; };
+		E14B9BA22313A85600C3B15E /* JMYInventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B9BA02313A85600C3B15E /* JMYInventoryCell.swift */; };
+		E14B9BA32313A85600C3B15E /* JMYInventoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14B9BA12313A85600C3B15E /* JMYInventoryCell.xib */; };
+		E14B9BA6231500A200C3B15E /* JMYLocationPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B9BA4231500A200C3B15E /* JMYLocationPopupViewController.swift */; };
+		E14B9BA7231500A200C3B15E /* JMYLocationPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14B9BA5231500A200C3B15E /* JMYLocationPopupViewController.xib */; };
+		E14B9BAA23153A2600C3B15E /* JMYLocationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B9BA823153A2600C3B15E /* JMYLocationListCell.swift */; };
+		E14B9BAB23153A2600C3B15E /* JMYLocationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14B9BA923153A2600C3B15E /* JMYLocationListCell.xib */; };
+		E1D6C6D222F32ED10041E856 /* JMYItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D6C6D022F32ED10041E856 /* JMYItemViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +31,19 @@
 		E116245E22ACDFAE006A6AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E116246122ACDFAE006A6AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E116246322ACDFAE006A6AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E116246922ACE13F006A6AD8 /* JMYPositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYPositionViewController.swift; sourceTree = "<group>"; };
-		E116246A22ACE13F006A6AD8 /* JMYPositionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYPositionViewController.xib; sourceTree = "<group>"; };
+		E116246922ACE13F006A6AD8 /* JMYLocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYLocationListViewController.swift; sourceTree = "<group>"; };
+		E116246A22ACE13F006A6AD8 /* JMYLocationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationListViewController.xib; sourceTree = "<group>"; };
 		E116246D22ACE266006A6AD8 /* JMYInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYInventoryViewController.swift; sourceTree = "<group>"; };
 		E116246E22ACE266006A6AD8 /* JMYInventoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYInventoryViewController.xib; sourceTree = "<group>"; };
 		E116247522ACE6D1006A6AD8 /* JMYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYViewController.swift; sourceTree = "<group>"; };
-		E1D6C6CF22F32ED10041E856 /* JMYStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYStockViewController.swift; sourceTree = "<group>"; };
-		E1D6C6D022F32ED10041E856 /* JMYStockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYStockViewController.xib; sourceTree = "<group>"; };
+		E14B9B9A2313A1E400C3B15E /* JMYItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYItemViewController.swift; sourceTree = "<group>"; };
+		E14B9BA02313A85600C3B15E /* JMYInventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYInventoryCell.swift; sourceTree = "<group>"; };
+		E14B9BA12313A85600C3B15E /* JMYInventoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYInventoryCell.xib; sourceTree = "<group>"; };
+		E14B9BA4231500A200C3B15E /* JMYLocationPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYLocationPopupViewController.swift; sourceTree = "<group>"; };
+		E14B9BA5231500A200C3B15E /* JMYLocationPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationPopupViewController.xib; sourceTree = "<group>"; };
+		E14B9BA823153A2600C3B15E /* JMYLocationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYLocationListCell.swift; sourceTree = "<group>"; };
+		E14B9BA923153A2600C3B15E /* JMYLocationListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationListCell.xib; sourceTree = "<group>"; };
+		E1D6C6D022F32ED10041E856 /* JMYItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYItemViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +79,103 @@
 			children = (
 				E116245722ACDFAD006A6AD8 /* AppDelegate.swift */,
 				E116247522ACE6D1006A6AD8 /* JMYViewController.swift */,
-				E116246922ACE13F006A6AD8 /* JMYPositionViewController.swift */,
-				E116246A22ACE13F006A6AD8 /* JMYPositionViewController.xib */,
+				E14B9B982313A11E00C3B15E /* Location */,
+				E14B9B992313A15100C3B15E /* Inventory */,
+				E14216A123153DBC0032CF4B /* Item */,
+				E14216A82316C8020032CF4B /* Module */,
+				E14216A72316C72C0032CF4B /* Resources */,
+			);
+			path = ExpirationDate;
+			sourceTree = "<group>";
+		};
+		E14216A123153DBC0032CF4B /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				E14216A623153E050032CF4B /* ViewControllers */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		E14216A223153DCA0032CF4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E116246922ACE13F006A6AD8 /* JMYLocationListViewController.swift */,
+				E116246A22ACE13F006A6AD8 /* JMYLocationListViewController.xib */,
+				E14B9BA4231500A200C3B15E /* JMYLocationPopupViewController.swift */,
+				E14B9BA5231500A200C3B15E /* JMYLocationPopupViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E14216A323153DDD0032CF4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E14B9BA823153A2600C3B15E /* JMYLocationListCell.swift */,
+				E14B9BA923153A2600C3B15E /* JMYLocationListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E14216A423153DF30032CF4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E14B9BA02313A85600C3B15E /* JMYInventoryCell.swift */,
+				E14B9BA12313A85600C3B15E /* JMYInventoryCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E14216A523153DF90032CF4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				E116246D22ACE266006A6AD8 /* JMYInventoryViewController.swift */,
 				E116246E22ACE266006A6AD8 /* JMYInventoryViewController.xib */,
-				E1D6C6CF22F32ED10041E856 /* JMYStockViewController.swift */,
-				E1D6C6D022F32ED10041E856 /* JMYStockViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E14216A623153E050032CF4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E14B9B9A2313A1E400C3B15E /* JMYItemViewController.swift */,
+				E1D6C6D022F32ED10041E856 /* JMYItemViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E14216A72316C72C0032CF4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				E116245E22ACDFAE006A6AD8 /* Assets.xcassets */,
 				E116246022ACDFAE006A6AD8 /* LaunchScreen.storyboard */,
 				E116246322ACDFAE006A6AD8 /* Info.plist */,
 			);
-			path = ExpirationDate;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E14216A82316C8020032CF4B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E14B9B982313A11E00C3B15E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E14216A223153DCA0032CF4B /* ViewControllers */,
+				E14216A323153DDD0032CF4B /* Views */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		E14B9B992313A15100C3B15E /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				E14216A523153DF90032CF4B /* ViewControllers */,
+				E14216A423153DF30032CF4B /* Views */,
+			);
+			path = Inventory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E116247022ACE266006A6AD8 /* JMYInventoryViewController.xib in Resources */,
-				E116246C22ACE13F006A6AD8 /* JMYPositionViewController.xib in Resources */,
+				E14B9BAB23153A2600C3B15E /* JMYLocationListCell.xib in Resources */,
+				E116246C22ACE13F006A6AD8 /* JMYLocationListViewController.xib in Resources */,
 				E116246222ACDFAE006A6AD8 /* LaunchScreen.storyboard in Resources */,
 				E116245F22ACDFAE006A6AD8 /* Assets.xcassets in Resources */,
-				E1D6C6D222F32ED10041E856 /* JMYStockViewController.xib in Resources */,
+				E14B9BA32313A85600C3B15E /* JMYInventoryCell.xib in Resources */,
+				E1D6C6D222F32ED10041E856 /* JMYItemViewController.xib in Resources */,
+				E14B9BA7231500A200C3B15E /* JMYLocationPopupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1D6C6D122F32ED10041E856 /* JMYStockViewController.swift in Sources */,
-				E116246B22ACE13F006A6AD8 /* JMYPositionViewController.swift in Sources */,
+				E14B9BAA23153A2600C3B15E /* JMYLocationListCell.swift in Sources */,
+				E14B9BA22313A85600C3B15E /* JMYInventoryCell.swift in Sources */,
+				E14B9B9B2313A1E400C3B15E /* JMYItemViewController.swift in Sources */,
+				E14B9BA6231500A200C3B15E /* JMYLocationPopupViewController.swift in Sources */,
+				E116246B22ACE13F006A6AD8 /* JMYLocationListViewController.swift in Sources */,
 				E116245822ACDFAD006A6AD8 /* AppDelegate.swift in Sources */,
 				E116246F22ACE266006A6AD8 /* JMYInventoryViewController.swift in Sources */,
 				E116247622ACE6D1006A6AD8 /* JMYViewController.swift in Sources */,
