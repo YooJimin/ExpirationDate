@@ -27,8 +27,8 @@ class JMYViewController: UIViewController {
 
     func setupDefaults() {
         
-        self.navigationController?.navigationBar.barStyle = .black
         self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         
     }
     

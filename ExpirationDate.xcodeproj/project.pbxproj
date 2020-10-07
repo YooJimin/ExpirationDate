@@ -33,12 +33,12 @@
 		E116245722ACDFAD006A6AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E116245E22ACDFAE006A6AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E116246122ACDFAE006A6AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E116246322ACDFAE006A6AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		E116246922ACE13F006A6AD8 /* JMYLocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYLocationListViewController.swift; sourceTree = "<group>"; };
 		E116246A22ACE13F006A6AD8 /* JMYLocationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYLocationListViewController.xib; sourceTree = "<group>"; };
 		E116246D22ACE266006A6AD8 /* JMYInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYInventoryViewController.swift; sourceTree = "<group>"; };
 		E116246E22ACE266006A6AD8 /* JMYInventoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYInventoryViewController.xib; sourceTree = "<group>"; };
 		E116247522ACE6D1006A6AD8 /* JMYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYViewController.swift; sourceTree = "<group>"; };
+		E13FEDAB2521D0C6001E9FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ExpirationDate/Info.plist; sourceTree = SOURCE_ROOT; };
 		E14B9B9A2313A1E400C3B15E /* JMYItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYItemViewController.swift; sourceTree = "<group>"; };
 		E14B9BA02313A85600C3B15E /* JMYInventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMYInventoryCell.swift; sourceTree = "<group>"; };
 		E14B9BA12313A85600C3B15E /* JMYInventoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMYInventoryCell.xib; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			children = (
 				E116245E22ACDFAE006A6AD8 /* Assets.xcassets */,
 				E116246022ACDFAE006A6AD8 /* LaunchScreen.storyboard */,
-				E116246322ACDFAE006A6AD8 /* Info.plist */,
+				E13FEDAB2521D0C6001E9FDA /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -420,15 +420,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GST65JV9LK;
 				INFOPLIST_FILE = ExpirationDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "elfymn-com.naver.blog.ExpirationDate";
+				PRODUCT_BUNDLE_IDENTIFIER = com.campmobile.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "campmobile wildcard dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,15 +439,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GST65JV9LK;
 				INFOPLIST_FILE = ExpirationDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "elfymn-com.naver.blog.ExpirationDate";
+				PRODUCT_BUNDLE_IDENTIFIER = com.campmobile.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "campmobile wildcard dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

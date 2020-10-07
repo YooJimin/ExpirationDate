@@ -118,6 +118,7 @@ extension JMYLocationListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let viewController = UINavigationController(rootViewController: JMYInventoryViewController())
+        viewController.modalPresentationStyle = .fullScreen
         self.present(viewController, animated: true, completion: nil)
         
     }
